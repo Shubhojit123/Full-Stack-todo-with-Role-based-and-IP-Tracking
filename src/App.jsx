@@ -1,5 +1,5 @@
 import './App.css'
-import Loginpage from '../component/loginpage';
+import Loginpage from '../component/Loginpage.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
