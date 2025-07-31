@@ -8,6 +8,8 @@ import PrivateUser from '../component/PrivateUser';
 import UserDashboard from '../component/UserDashboard';
 import PrivateAdmin from '../component/PrivateAdmin';
 import AdminDashboard from '../component/AdminDashboard';
+import Notfound from '../Notfound';
+
 function App() {
   return (
     <>
@@ -24,7 +26,7 @@ function App() {
             <Route path='/admin' element={<PrivateAdmin />}>
               <Route path='dashboard' element={<AdminDashboard />} />
             </Route>
-
+            <Route path='/*' element={<Notfound/>}/>
           </Routes>
     
       </BrowserRouter>
